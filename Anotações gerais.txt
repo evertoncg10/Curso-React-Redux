@@ -1,0 +1,9 @@
+Instalar pacote create-react-app de forma global (Verificar usando npx)
+npm i -g create-react-app
+
+Criar projeto React utilizando o pacote create-react-app
+create-react-app <nome do projeto>
+
+Startar o projeto após ser criado
+OBS: após a criação do projeto a sugestão é usar o yarn
+yarn start
