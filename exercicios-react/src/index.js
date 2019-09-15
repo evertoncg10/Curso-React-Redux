@@ -5,7 +5,8 @@ import PrimeiroComponente from './componentes/PrimeiroComponente';
 const elemento = document.getElementById('root');
 ReactDOM.render(
     <div>
-        <PrimeiroComponente/>
+        { /*O ** é  o operador de potência. Equivale a Math.pow(2, 8)*/}
+        <PrimeiroComponente valor = "Bom dia" potencia2={2**8}/>
     </div>
     , elemento);
 

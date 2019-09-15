@@ -1,10 +1,21 @@
 import React from 'react';
 
+let isLegal = true;
 
-export default () => 
+export default (props) => 
     <div>
-        <h1>Primeiro Componente (Arrow)!</h1>;
+        <h1>{ props.valor }</h1>
+        <h2>{ props.potencia2 }</h2>
+        <h2>{ 1 + 2 }</h2>
+        <p>Legal ? { isLegal ? 'Sim' : 'Não' }</p>
+        <p>{ Math.random() }</p>
     </div>
+
+
+// export default (props) => 
+//     <div>
+//         <h1>Primeiro Componente (Arrow)!</h1>;
+//     </div>
 
 
 //Pode fazer desse jeito também
