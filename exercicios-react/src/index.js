@@ -6,7 +6,7 @@ import ReactDOM from 'react-dom';
 
 // import MultiElementos from './componentes/MultiElementos';
 
-import FamiliaSilva from './componentes/FamiliaSilva';
+// import FamiliaSilva from './componentes/FamiliaSilva';
 
  import Familia from './componentes/Familia';
  import Membro from './componentes/Membro';
@@ -23,10 +23,10 @@ ReactDOM.render(
 
         <Familia sobrenome="Pereira">
             <Membro nome="André"  />
-            <Membro nome="Mariana" />
+            {/* <Membro nome="Mariana" /> */}
         </Familia>
 
-        <FamiliaSilva sobrenome="Silva" />
+        {/* <FamiliaSilva sobrenome="Silva" /> */}
     </div>
     , elemento);
 
