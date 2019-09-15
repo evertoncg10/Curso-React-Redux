@@ -4,7 +4,9 @@ import ReactDOM from 'react-dom';
 // o as serve para dar um apelido ao componente
 //import { CompA, CompB as B} from './componentes/DoisComponentes';
 
-import MultiElementos from './componentes/MultiElementos';
+// import MultiElementos from './componentes/MultiElementos';
+
+import FamiliaSilva from './componentes/FamiliaSilva';
 
 const elemento = document.getElementById('root');
 ReactDOM.render(
@@ -14,7 +16,8 @@ ReactDOM.render(
 
         <CompA valor="Olá eu sou A!"/>
         <B valor="B na área!"/>*/}
-        <MultiElementos/>
+        {/* <MultiElementos/> */}
+        <FamiliaSilva />
     </div>
     , elemento);
 
