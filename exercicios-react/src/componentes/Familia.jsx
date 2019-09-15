@@ -6,9 +6,9 @@ import { filhosComProps } from '../utils/utils';
         <h2> Família</h2>
             { filhosComProps(props) }
             
-            {/* {React.children.map(props.children, filho => {
+            {/* {React.Children.map(props.children, filho => {
                 return React.cloneElement(filho, { ...props })
-            })}; */}
+            })} */}
 
             {/* {React.cloneElement(props.children, { ...props })} */}
 

@@ -23,7 +23,7 @@ ReactDOM.render(
 
         <Familia sobrenome="Pereira">
             <Membro nome="André"  />
-            {/* <Membro nome="Mariana" /> */}
+            <Membro nome="Mariana" />
         </Familia>
 
         {/* <FamiliaSilva sobrenome="Silva" /> */}
