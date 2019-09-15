@@ -6,7 +6,7 @@ import ReactDOM from 'react-dom';
 
 // import MultiElementos from './componentes/MultiElementos';
 
-// import FamiliaSilva from './componentes/FamiliaSilva';
+import FamiliaSilva from './componentes/FamiliaSilva';
 
  import Familia from './componentes/Familia';
  import Membro from './componentes/Membro';
@@ -20,12 +20,13 @@ ReactDOM.render(
         <CompA valor="Olá eu sou A!"/>
         <B valor="B na área!"/>*/}
         {/* <MultiElementos/> */}
-        {/* <FamiliaSilva /> */}
 
-        <Familia>
-            <Membro nome="André" sobrenome="Pereira" />
-            <Membro nome="Mariana" sobrenome="Pereira" />
+        <Familia sobrenome="Pereira">
+            <Membro nome="André"  />
+            <Membro nome="Mariana" />
         </Familia>
+
+        <FamiliaSilva sobrenome="Silva" />
     </div>
     , elemento);
 
