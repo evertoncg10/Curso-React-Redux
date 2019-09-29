@@ -11,6 +11,7 @@ import ReactDOM from 'react-dom';
  import Familia from './componentes/Familia';
  import Membro from './componentes/Membro';
  import ComponenteComFuncao from './componentes/CompenenteComFuncao';
+ import Pai from './componentes/Pai';
 
 const elemento = document.getElementById('root');
 ReactDOM.render(
@@ -28,6 +29,8 @@ ReactDOM.render(
         </Familia>
 
         <ComponenteComFuncao/>
+
+        <Pai />
 
         {/* <FamiliaSilva sobrenome="Silva" /> */}
     </div>
