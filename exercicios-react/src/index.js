@@ -13,7 +13,8 @@ import ReactDOM from 'react-dom';
  import ComponenteComFuncao from './componentes/CompenenteComFuncao';
  import Pai from './componentes/Pai';
  import ComponentClasse from './componentes/ComponenteClasse';
-import ComponenteClasse from './componentes/ComponenteClasse';
+ import ComponenteClasse from './componentes/ComponenteClasse';
+ import Contador from './componentes/Contador';
 
 const elemento = document.getElementById('root');
 ReactDOM.render(
@@ -35,6 +36,7 @@ ReactDOM.render(
         <Pai />
 
         <ComponenteClasse valor="Valor"/>
+        <Contador numero={0} />
 
         {/* <FamiliaSilva sobrenome="Silva" /> */}
     </div>
