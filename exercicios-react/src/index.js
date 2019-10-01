@@ -35,7 +35,7 @@ ReactDOM.render(
         <Pai />
 
         <ComponenteClasse valor="Valor"/>
-        <Contador numero={0} />
+        <Contador numeroInicial={0} />
 
         {/* <FamiliaSilva sobrenome="Silva" /> */}
     </div>
