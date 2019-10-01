@@ -12,7 +12,6 @@ import ReactDOM from 'react-dom';
  import Membro from './componentes/Membro';
  import ComponenteComFuncao from './componentes/CompenenteComFuncao';
  import Pai from './componentes/Pai';
- import ComponentClasse from './componentes/ComponenteClasse';
  import ComponenteClasse from './componentes/ComponenteClasse';
  import Contador from './componentes/Contador';
 
