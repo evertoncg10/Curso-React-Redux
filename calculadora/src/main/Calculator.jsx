@@ -29,7 +29,27 @@ export default class Calculator extends Component {
     }
 
     setOperation(operation) {
-        console.log(operation);
+        if (this.state.current === 0) {
+            this.setState({ operation, current: 1, clearDisplay: true });
+        } else {
+            const isEquals = operation === '=';
+            const currentOperation = this.state.operation;
+            const values = [...this.state.values];
+            try {
+                values[0] = eval(`${values[0]} ${currentOperation} ${values[1]}`);
+            } catch (e) {
+                values[0] = this.state.values[0];
+            }
+            values[1] = 0;
+
+            this.setState({
+                displayValue: values[0],
+                operation: isEquals ? null : operation,
+                current: isEquals ? 0 : 1,
+                clearDisplay: !isEquals,
+                values
+            });
+        }
     }
 
     addDigit(n) {
@@ -49,7 +69,6 @@ export default class Calculator extends Component {
             const values = [...this.state.values];
             values[i] = newValue;
             this.setState({ values });
-            console.log(values);
         }
 
     }
