@@ -1,3 +1,5 @@
+Aula: Seção 2: Fundamentos React -  Configuração do Projeto
+
 Instalar pacote create-react-app de forma global (Verificar usando npx)
 npm i -g create-react-app
 
@@ -7,3 +9,24 @@ create-react-app <nome do projeto>
 Startar o projeto após ser criado
 OBS: após a criação do projeto a sugestão é usar o yarn
 yarn start
+
+--------------------------------------------------------------------------------------------
+Aula: Seção 5: TodoApp Frontend - Configuração e Instalação
+Comandos de instalação das dependências
+
+//Instalação dependência webpack e webpack server
+npm i --save-dev webpack@1.14.0 webpack-dev-server@1.16.2
+
+//Instalação dependências Babel
+npm i --save-dev babel-core@6.22.1 babel-loader@6.2.10 babel-plugin-react-html-attrs@2.0.0 babel-plugin-transform-object-rest-spread@6.22.0 babel-preset-es2015@6.22.0 babel-preset-react@6.22.0
+
+//Instalação dependências processamento css e carregamento de imagens
+npm i --save-dev extract-text-webpack-plugin@1.0.1 css-loader@0.26.1 style-loader@0.13.1 file-loader@0.9.0
+
+//Instalação dependências Bootstrap e font awesome
+npm i --save-dev bootstrap@3.3.7 font-awesome@4.7.0
+
+//Instalação dependências React
+npm i --save-dev react@15.4.2 react-dom@15.4.2 react-router@3.0.2 axios@0.15.3
+
+-------------------------------------------------------------------------------------------
