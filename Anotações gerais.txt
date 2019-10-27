@@ -30,3 +30,10 @@ npm i --save-dev bootstrap@3.3.7 font-awesome@4.7.0
 npm i --save-dev react@15.4.2 react-dom@15.4.2 react-router@3.0.2 axios@0.15.3
 
 -------------------------------------------------------------------------------------------
+
+Seção 6: React com Redux 
+
+Iniciando com Redux em 9 passos
+https://medium.com/reactbrasil/iniciando-com-redux-c14ca7b7dcf
+
+-------------------------------------------------------------------------------------------
