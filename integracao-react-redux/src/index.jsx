@@ -8,7 +8,7 @@ import Field from './field';
  *  Reducers são funções puras
 */
 const reducers = combineReducers({
-    field: () => ({ valeu: 'Opa' })
+    field: () => ({ value: 'Opa' })
 });
 
 ReactDOM.render(
