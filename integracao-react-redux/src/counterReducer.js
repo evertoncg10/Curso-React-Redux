@@ -7,7 +7,10 @@ export default function(state = INITIAL_STATE, action) {
         case 'DECREMENT':
             return { ...state, number: state.number - state.step };
         case 'STEP_CHANGED':
-            return { ...state, step: action.payload };
+            // O + faz parse da string para number
+            // return { ...state, step: +action.payload };
+            return { ...state, step: Number(action.payload) };
+            
         default:
             return state;
     }
