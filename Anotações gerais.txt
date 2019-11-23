@@ -37,3 +37,7 @@ Iniciando com Redux em 9 passos
 https://medium.com/reactbrasil/iniciando-com-redux-c14ca7b7dcf
 
 -------------------------------------------------------------------------------------------
+
+React Workshops 03: Middlewares And React Redux Life-Cycle
+Part 1 - https://www.youtube.com/watch?v=FbawatNkWPk
+Part 2 - https://www.youtube.com/watch?v=JQL2GtUGtPo&list=PLinpyTbt1FwxTRKn089Wh1xeBQJMWoRhK&index=6
