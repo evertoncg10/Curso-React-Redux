@@ -22,12 +22,19 @@ class Dashboard extends Component {
                 <ContentHeader title='Dashboard' small='Versão 1.0' />
                 <Content>
                     <Row>
+                    {/* 
+                      * o método toLocaleString formata números no formato do país passado por parâmetro 
+                      * link documentação: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Number/toLocaleString
+                    */}
                         <ValueBox cols='12 4' color='green' icon='bank' 
-                                value={`R$ ${credit}`} text='Total de Créditos' />
+                            value={`${credit.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}`} 
+                            text='Total de Créditos' />
                         <ValueBox cols='12 4' color='red' icon='credit-card' 
-                            value={`R$ ${debt}`} text='Total de Débitos' />
+                            value={`${debt.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}`} 
+                            text='Total de Débitos' />
                         <ValueBox cols='12 4' color='blue' icon='money' 
-                            value={`R$ ${credit - debt}`} text='Valor Consolidado' /> 
+                            value={`${(credit - debt).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}`} 
+                            text='Valor Consolidado' /> 
                     </Row>
                 </Content>
             </div>
