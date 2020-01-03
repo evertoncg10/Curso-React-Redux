@@ -1,8 +1,5 @@
 import React, { Component } from 'react'
 
-import ContentHeader from '../common/template/contentHeader'
-import Content from '../common/template/content'
-
 export default class Grid extends Component {
     toCssClasses(numbers) {
         const cols = numbers ? numbers.split(' ') : []
