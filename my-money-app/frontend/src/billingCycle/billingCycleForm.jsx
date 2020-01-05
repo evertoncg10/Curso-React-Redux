@@ -5,6 +5,7 @@ import { reduxForm, Field } from 'redux-form'
 
 import labelAndInput from '../common/form/labelAndInput'
 import { init } from './billingCycleActions'
+import CreditList from './creditList'
 
 class BillingCycleForm extends Component {
 
@@ -21,6 +22,7 @@ class BillingCycleForm extends Component {
                         type='number' label='Mês' cols='12 4' placeholder= 'Informe o Mês' />
                     <Field name='year' component={labelAndInput} readOnly={readOnly}
                         type='number' label='Ano' cols='12 4' placeholder= 'Informe o ano' />
+                    <CreditList cols='12 6' />
                 </div>
 
                 <div className='box-footer'>
