@@ -7,6 +7,7 @@ import labelAndInput from '../common/form/labelAndInput'
 import { init } from './billingCycleActions'
 
 class BillingCycleForm extends Component {
+
     render() {
 
         const { handleSubmit } = this.props
