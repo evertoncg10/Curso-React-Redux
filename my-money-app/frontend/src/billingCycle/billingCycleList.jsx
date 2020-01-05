@@ -18,7 +18,7 @@ class BillingCycleList extends Component {
                 <td>{billingCycle.name}</td>
                 <td>{billingCycle.month}</td>
                 <td>{billingCycle.year}</td>
-                <td>
+                <td  className='table-actions'>
                     <button className='btn btn-warning' 
                         onClick={() => this.props.showUpdate(billingCycle)}
                         data-tip="Alterar">
@@ -47,10 +47,10 @@ class BillingCycleList extends Component {
                 <table className='table'>
                     <thead>
                         <tr>
-                            <th style={{width: "50%"}}>Nome</th>
-                            <th style={{width: "20%"}}>Mês</th>
-                            <th style={{width: "20%"}}>Ano</th>
-                            <th>Ações</th>
+                            <th>Nome</th>
+                            <th>Mês</th>
+                            <th>Ano</th>
+                            <th className='table-actions'>Ações</th>
                         </tr>
                     </thead>
                     <tbody>
