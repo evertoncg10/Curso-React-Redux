@@ -22,7 +22,7 @@ class BillingCycleForm extends Component {
                         type='number' label='Mês' cols='12 4' placeholder= 'Informe o Mês' />
                     <Field name='year' component={LabelAndInput} readOnly={readOnly}
                         type='number' label='Ano' cols='12 4' placeholder= 'Informe o ano' />
-                    <CreditList cols='12 6' list={credits} readOnly={readOnly} />
+                    <CreditList cols='12' list={credits} readOnly={readOnly} />
                 </div>
 
                 <div className='box-footer'>
