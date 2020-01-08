@@ -4,6 +4,7 @@ import { bindActionCreators } from 'redux'
 import Grid from '../common/layout/grid'
 import { Field, arrayInsert, arrayRemove } from 'redux-form'
 import Input from '../common/form/input'
+import If from '../common/operador/if'
 
 class ItemList extends Component {
 
@@ -31,6 +32,12 @@ class ItemList extends Component {
                     <Field name={`${this.props.field}[${index}].value`} component={Input} 
                         placeholder='Informe o valor' readOnly={this.props.readOnly} />
                 </td>
+                <If visible={this.props.showStatus}>
+                    <td>
+                    <Field name={`${this.props.field}[${index}].status`} component={Input} 
+                        placeholder='Informe o status' readOnly={this.props.readOnly} />
+                    </td>
+                </If>
                 <td>
                     <button type='button' className='btn btn-success'
                         onClick={() => this.add(index + 1)}>
@@ -59,7 +66,10 @@ class ItemList extends Component {
                         <tr>
                             <td>Nome</td>
                             <td>Valor</td>
-                            <td className='tab-actions'>Ações</td>
+                            <If visible={this.props.showStatus}>
+                                <th>Status</th>
+                            </If>
+                            <td className='table-actions'>Ações</td>
                         </tr>
                     </thead>
                     <tbody>
