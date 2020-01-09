@@ -1,6 +1,7 @@
 *.zip
 *.lock
 *.log
+*.pdf
 node_modules
 /Arquivos-Curso
 package-lock.json
