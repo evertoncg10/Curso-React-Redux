@@ -10,9 +10,18 @@ import Summary from './summary'
 
 class BillingCycleForm extends Component {
 
+    calculateSummary(){
+        const sum = (total, value) => total + value
+        return {
+            sumOfCredits: this.props.credits.map(credit => +credit.value || 0).reduce(sum),
+            sumOfDebts: this.props.debts.map(debt => +debt.value || 0).reduce(sum)
+        }
+    }
+
     render() {
 
         const { handleSubmit, readOnly, credits, debts } = this.props
+        const { sumOfCredits, sumOfDebts } = this.calculateSummary()
 
         return (
             <form role='form' onSubmit={handleSubmit}>
@@ -24,7 +33,7 @@ class BillingCycleForm extends Component {
                     <Field name='year' component={LabelAndInput} readOnly={readOnly}
                         type='number' label='Ano' cols='12 4' placeholder= 'Informe o ano' />
 
-                    <Summary credit={1000} debt={100} />
+                    <Summary credit={sumOfCredits} debt={sumOfDebts} />
 
                     <ItemList cols='12' list={credits} readOnly={readOnly} 
                         field='credits' legend='Créditos'/>
